@@ -1,34 +1,40 @@
 /* CSS Reset*/
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
+
 /* CSS Variables*/
-:root{
-    --navbar-height:59px;
+
+:root {
+    --navbar-height: 59px;
     --baloo-bhai: 'Baloo Bhaina 2', cursive;
     --breee: 'Bree Serif', serif;
 }
 
+
 /* Navigation Bar */
-#navbar{
+
+#navbar {
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
-    position:sticky;
+    position: sticky;
     top: 0px;
 }
 
-
-#navbar ul{
+#navbar ul {
     display: flex;
     font-family: var(--baloo-bhai);
 }
-#navbar::before{
+
+#navbar::before {
     content: "";
     background-color: black;
     position: absolute;
@@ -37,29 +43,31 @@ html{
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity:0.4;
-
+    opacity: 0.4;
 }
-#navbar ul li{
+
+#navbar ul li {
     list-style-type: none;
     font-size: 1.3rem;
 }
 
-#navbar ul li a{
+#navbar ul li a {
     display: block;
-    padding:3px 25px;
+    padding: 3px 25px;
     border-radius: 20px;
     text-decoration: none;
     color: white;
 }
 
-#navbar ul li a:hover{
+#navbar ul li a:hover {
     color: black;
     background-color: white;
 }
 
+
 /* Home section  */
-#home{
+
+#home {
     display: flex;
     flex-direction: column;
     padding: 3px 100px;
@@ -68,7 +76,7 @@ html{
     height: 480px;
 }
 
-#home::before{
+#home::before {
     content: "";
     background-image: url(images/whitney-wright-6G98hiCJETA-unsplash.jpg);
     position: absolute;
@@ -79,53 +87,58 @@ html{
     height: 80%;
     width: 100%;
     z-index: -1;
-    opacity:0.8;
+    opacity: 0.7;
 }
-#home h1{
+
+#home h1 {
     color: white;
     text-align: center;
     font-family: var(--breee);
     font-size: 2.0rem;
 }
 
-#home p{
-    color:mintcream;
+#home p {
+    color: mintcream;
     text-align: center;
     font-size: 1.3rem;
     /* font-family: var(--breee); */
     text-shadow: 2px 2px 2px black;
 }
 
+
 /* Services Section  */
-.services-container{
+
+.services-container {
     padding: 10px;
 }
-#services{
+
+#services {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#services .box{
+
+#services .box {
     border: 2px solid black;
     margin: 0px 5px;
     border-radius: 10px;
     padding: 10px;
 }
-#services .box img{
+
+#services .box img {
     display: block;
-    height:100px ;
+    height: 100px;
     margin: auto;
 }
 
 
-
 /* Client section  */
-#client-section .h-primary{
-    color: rgb(0, 0, 0);
 
+#client-section .h-primary {
+    color: rgb(0, 0, 0);
 }
 
-#client-section::before{
+#client-section::before {
     content: "";
     position: absolute;
     background-image: url("images/brooke-lark-wMzx2nBdeng-unsplash.jpg");
@@ -135,28 +148,31 @@ html{
     height: 50%;
     width: 100%;
     z-index: -1;
-
 }
-#clients{
+
+#clients {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
-#clients img{
+#clients img {
     height: 100px;
 }
-.client-item{
+
+.client-item {
     padding: 30px;
 }
 
+
 /* Contact Section  */
-#contact{
+
+#contact {
     position: relative;
 }
 
-#contact::before{
+#contact::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -166,50 +182,56 @@ html{
     background-repeat: no-repeat;
     background-position: center;
     z-index: -1;
-
 }
-#contact-box{
+
+#contact-box {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 30px;
 }
 
-
-#contact-box input, #contact-box textarea{
+#contact-box input,
+#contact-box textarea {
     width: 100%;
     padding: 0.5rem;
 }
-#contact-box form{
+
+#contact-box form {
     width: 40%;
 }
-#contact-box label{
+
+#contact-box label {
     font-size: 1.3rem;
     font-family: var(--breee);
     color: white;
 }
-footer{
+
+footer {
     background-color: black;
     color: white;
     padding: 20px 25px;
 }
 
+
 /* Utility Classes*/
-.h-primary{
+
+.h-primary {
     font-size: 2.8rem;
     padding: 12px;
     font-family: var(--breee);
 }
-.h-secondary{
+
+.h-secondary {
     font-size: 2rem;
     padding: 12px;
     font-family: var(--breee);
 }
 
-.btn{
+.btn {
     padding: 6px 15px;
     border: 2px solid white;
-    background-color:sienna;
+    background-color: sienna;
     color: white;
     margin: 17px;
     font-size: 1.2rem;
@@ -217,6 +239,6 @@ footer{
     cursor: pointer;
 }
 
-.center{
+.center {
     text-align: center;
 }
