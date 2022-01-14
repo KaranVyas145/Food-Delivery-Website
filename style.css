@@ -24,7 +24,6 @@ html {
 #navbar {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     position: sticky;
     top: 0px;
 }
@@ -73,7 +72,7 @@ html {
     padding: 3px 100px;
     justify-content: center;
     align-items: center;
-    height: 480px;
+    height: 640px;
 }
 
 #home::before {
